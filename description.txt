@@ -1,3 +1,10 @@
-Hello , this is all about the project "  SPLITSMART "
+SPLITSMART
 
-In this , you will track your expenses with friends.
+SplitSmart is a smart expense-sharing project that helps friends
+track, split, and manage shared expenses easily.
+
+Features:
+- Add and track expenses
+- Split expenses with friends
+- Simple and clean interface
+- Easy expense management 
