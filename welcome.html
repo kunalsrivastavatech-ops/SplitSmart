@@ -1,0 +1,396 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SplitSmart — Smart Expense Sharing</title>
+
+<link rel="stylesheet" href="welcome.css">
+
+</head><body><!-- NAVBAR --><nav class="navbar"><div class="logo">
+    Split<span>Smart</span>
+</div>
+
+<div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#how">How It Works</a>
+    <a href="#about">About</a>
+    <a href="#app" class="nav-button">Get Started</a>
+</div>
+
+</nav><!-- HERO --><section class="hero"><div class="hero-content">
+
+    <div class="badge">
+        ✨ Smart Expense Sharing
+    </div>
+
+    <h1>
+        Split expenses.
+        <span>Not friendships.</span>
+    </h1>
+
+    <p>
+        SplitSmart makes group expenses simple.
+        Track who paid, who owes and settle everything
+        without the awkward calculations.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="#app" class="btn primary">
+            Start Splitting →
+        </a>
+
+        <a href="#features" class="btn secondary">
+            Explore Features
+        </a>
+
+    </div>
+
+    <div class="trust">
+        <div class="avatars">
+            <span>👨🏻</span>
+            <span>👩🏻</span>
+            <span>👨🏽</span>
+            <span>👩🏽</span>
+        </div>
+
+        <p>
+            Made for trips, roommates & friends
+        </p>
+    </div>
+
+</div>
+
+
+<!-- APP PREVIEW -->
+<div class="preview">
+
+    <div class="preview-top">
+        <div>
+            <small>GROUP</small>
+            <h3>Goa Trip 2026</h3>
+        </div>
+
+        <div class="menu">•••</div>
+    </div>
+
+    <div class="total-box">
+        <small>Total spent</small>
+        <strong>₹12,450</strong>
+    </div>
+
+    <div class="expense-row">
+        <div>
+            <b>🍕 Dinner</b>
+            <small>Paid by Kunal</small>
+        </div>
+
+        <strong>₹2,400</strong>
+    </div>
+
+    <div class="expense-row">
+        <div>
+            <b>🚕 Cab</b>
+            <small>Paid by Rahul</small>
+        </div>
+
+        <strong>₹850</strong>
+    </div>
+
+    <div class="expense-row">
+        <div>
+            <b>🏨 Hotel</b>
+            <small>Paid by Priya</small>
+        </div>
+
+        <strong>₹6,500</strong>
+    </div>
+
+    <div class="settlement">
+        <span>✓ Smart Settlement</span>
+        <b>3 payments</b>
+    </div>
+
+</div>
+
+</section><!-- FEATURES --><section class="features" id="features"><div class="section-heading">
+    <div class="badge">⚡ Powerful Features</div>
+
+    <h2>
+        Everything your group
+        <span>needs.</span>
+    </h2>
+
+    <p>
+        No spreadsheets. No calculators. No arguments.
+    </p>
+</div>
+
+
+<div class="feature-grid">
+
+    <div class="feature-card">
+        <div class="icon">🤝</div>
+        <h3>Smart Settlement</h3>
+        <p>
+            Automatically calculate who owes whom
+            and simplify multiple payments.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <div class="icon">💰</div>
+        <h3>Group Expenses</h3>
+        <p>
+            Add expenses, choose who paid and
+            keep everyone's spending organized.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <div class="icon">📊</div>
+        <h3>Spending Insights</h3>
+        <p>
+            Understand where your group's money
+            is actually going.
+        </p>
+    </div>
+
+</div>
+
+</section><!-- HOW IT WORKS --><section class="how" id="how"><div class="section-heading">
+    <div class="badge">🚀 Simple Process</div>
+
+    <h2>
+        Split in <span>3 steps.</span>
+    </h2>
+</div>
+
+
+<div class="steps">
+
+    <div class="step">
+        <div class="number">01</div>
+        <h3>Create a group</h3>
+        <p>
+            Start a group for your trip,
+            roommates or friends.
+        </p>
+    </div>
+
+    <div class="step">
+        <div class="number">02</div>
+        <h3>Add expenses</h3>
+        <p>
+            Enter what was bought,
+            how much it cost and who paid.
+        </p>
+    </div>
+
+    <div class="step">
+        <div class="number">03</div>
+        <h3>Settle up</h3>
+        <p>
+            SplitSmart calculates the
+            payments automatically.
+        </p>
+    </div>
+
+</div>
+
+</section><!-- WORKING APP --><section class="app-section" id="app"><div class="section-heading">
+
+    <div class="badge">💸 Try SplitSmart</div>
+
+    <h2>
+        Start splitting
+        <span>right now.</span>
+    </h2>
+
+    <p>
+        Add your group's expenses and see the total instantly.
+    </p>
+
+</div>
+
+
+<div class="expense-app">
+
+    <div class="app-header">
+        <div>
+            <small>YOUR GROUP</small>
+            <h3>My Trip</h3>
+        </div>
+
+        <div class="live">
+            ● LIVE
+        </div>
+    </div>
+
+
+    <div class="input-area">
+
+        <input
+            type="text"
+            id="expenseName"
+            placeholder="Expense name"
+        >
+
+        <input
+            type="number"
+            id="expenseAmount"
+            placeholder="Amount ₹"
+        >
+
+        <button onclick="addExpense()">
+            + Add Expense
+        </button>
+
+    </div>
+
+
+    <div class="total-display">
+
+        <small>Total Expenses</small>
+
+        <h2 id="total">
+            ₹0
+        </h2>
+
+    </div>
+
+
+    <div id="expenseList">
+
+        <div class="empty">
+            No expenses added yet.
+            <br>
+            Add your first expense above 👆
+        </div>
+
+    </div>
+
+
+    <button class="reset" onclick="resetExpenses()">
+        Reset Expenses
+    </button>
+
+</div>
+
+</section><!-- ABOUT --><section class="about" id="about"><div class="about-box">
+
+    <div>
+        <div class="badge">💜 About SplitSmart</div>
+
+        <h2>
+            Built to make
+            <span>group money</span>
+            simple.
+        </h2>
+    </div>
+
+    <p>
+        SplitSmart is a simple expense-sharing concept
+        designed for students, friends, roommates and
+        travelers. Add expenses, track spending and
+        make settling up easier.
+    </p>
+
+</div>
+
+</section><!-- FOOTER --><footer><div class="logo">
+    Split<span>Smart</span>
+</div>
+
+<p>
+    Split expenses. Not friendships. 💜
+</p>
+
+<p class="copyright">
+    ©️ 2026 SplitSmart
+</p>
+
+</footer><script>
+
+let totalAmount = 0;
+
+
+function addExpense() {
+
+    const name =
+        document.getElementById("expenseName").value;
+
+    const amount =
+        Number(document.getElementById("expenseAmount").value);
+
+    if (name === "" || amount <= 0) {
+
+        alert("Please enter an expense name and valid amount.");
+
+        return;
+    }
+
+
+    totalAmount += amount;
+
+
+    const list =
+        document.getElementById("expenseList");
+
+
+    const empty =
+        list.querySelector(".empty");
+
+    if (empty) {
+        empty.remove();
+    }
+
+
+    const expense =
+        document.createElement("div");
+
+    expense.className = "added-expense";
+
+
+    expense.innerHTML = `
+        <div>
+            <b>💰 ${name}</b>
+            <small>Added just now</small>
+        </div>
+
+        <strong>₹${amount.toLocaleString()}</strong>
+    `;
+
+
+    list.prepend(expense);
+
+
+    document.getElementById("total").innerText =
+        "₹" + totalAmount.toLocaleString();
+
+
+    document.getElementById("expenseName").value = "";
+
+    document.getElementById("expenseAmount").value = "";
+
+}
+
+
+function resetExpenses() {
+
+    totalAmount = 0;
+
+    document.getElementById("total").innerText = "₹0";
+
+
+    document.getElementById("expenseList").innerHTML = `
+        <div class="empty">
+            No expenses added yet.
+            <br>
+            Add your first expense above 👆
+        </div>
+    `;
+
+}
+
+</script></body>
+</html>
